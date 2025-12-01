@@ -92,4 +92,6 @@
       rollButton.addEventListener("click", rollDice);
       
       diceDisplay.innerHTML = createDiceSVG(1);
+
+      //update//
     
