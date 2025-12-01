@@ -45,12 +45,12 @@
         const circles = dots
           .map(
             (d) =>
-              `<circle cx="${d.cx}" cy="${d.cy}" r="10" fill="#ffffffff"></circle>`
+              `<circle cx="${d.cx}" cy="${d.cy}" r="10" fill="#a1f2a3ff"></circle>`
           )
           .join("");
         return `
-        <svg viewBox="0 0 100 100" class="w-full h-full">
-          <rect width="100" height="100" rx="15" ry="15" fill="#333"></rect>
+        <svg viewBox="0 0 100 100" class="w-full h-full ">
+          <rect width="100" height="100" rx="5" ry="5" fill="#de2828ff"></rect>
           ${circles}
         </svg>
       `;
@@ -92,4 +92,6 @@
       rollButton.addEventListener("click", rollDice);
       
       diceDisplay.innerHTML = createDiceSVG(1);
+
+      //update//
     
